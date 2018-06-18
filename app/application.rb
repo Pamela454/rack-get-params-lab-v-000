@@ -33,7 +33,7 @@ class Application
         resp.write "We don't have that item"
       end
     else
-        resp.write ""
+        resp.write "Not found"
     end
 
   def handle_search(search_term)
