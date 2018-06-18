@@ -34,6 +34,7 @@ class Application
     else
         resp.finish
     end
+        resp.finish
   end
 
   def handle_search(search_term)
