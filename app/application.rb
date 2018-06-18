@@ -17,7 +17,7 @@ class Application
     elsif req.path.match(/cart/)
       @@cart.any?
       if true
-        @@carts.each do |item|
+        @@cart.each do |item|
         resp.write "#{item}\n"
         end
       elsif
