@@ -32,6 +32,7 @@ class Application
         end
       else
         resp.write "We don't have that item"
+      end
     else
         resp.write "Not found"
     end
