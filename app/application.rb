@@ -19,7 +19,7 @@ class Application
       if true
         @@carts.each do |item|
         resp.write "#{item}\n"
-      end
+        end
       elsif
       @@cart == []
       resp.write "Your cart is empty"
