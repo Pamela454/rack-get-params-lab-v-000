@@ -2,7 +2,7 @@ require 'pry'
 class Application
 
   @@items = ["Apples","Carrots","Pears"]
-  @@cart = []
+  @@cart = ["Apple"]
 
   def call(env)
     resp = Rack::Response.new
