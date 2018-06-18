@@ -26,8 +26,8 @@ class Application
     #  if @@cart.@@items.detect {|item|
     #    item == @@cart}
     #    @@cart << item
-      else
-        resp.write "We don't have that item"
+    #  else
+    #    resp.write "We don't have that item"
       end
     end
     resp.finish
