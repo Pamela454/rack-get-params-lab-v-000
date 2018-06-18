@@ -25,7 +25,7 @@ class Application
       end  #check to see if item is in array and add to cart if it is
     elsif req.path.match(/add/)
       new_item = req.params["item"]
-      if @@items.include? search_term
+      if @@items.include? new_item
         @@cart << search_term
       else
         resp.write "We don't have that item"
