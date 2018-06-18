@@ -23,7 +23,7 @@ class Application
           resp.write "#{item}\n"
         end
       end
-    end   #check to see if item is in array and add to cart if it is 
+    end   #check to see if item is in array and add to cart if it is
     elsif req.path.match(/add/)
       search_term = req.params["item"]
       if @@cart.@@items.detect {|item|
@@ -32,6 +32,8 @@ class Application
       else
         resp.write "We don't have that item"
       end
+    else
+        resp.write ""
     end
 
   def handle_search(search_term)
