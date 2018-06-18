@@ -24,15 +24,15 @@ class Application
         end
       end
     end
-  elsif req.path.match(/add/)
-    #  search_term = req.params["item"]
-    #  if @@cart.@@items.detect {|item|
-    #    item == @@cart}
-    #    @@cart << item
-    #  else
-    #    resp.write "We don't have that item"
-    #  end
-    #end
+    elsif req.path.match(/add/)
+      search_term = req.params["item"]
+      if @@cart.@@items.detect {|item|
+        item == @@cart}
+        @@cart << item
+      else
+        resp.write "We don't have that item"
+      end
+    end
 
   def handle_search(search_term)
     if @@items.include?(search_term)
