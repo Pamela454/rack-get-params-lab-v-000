@@ -27,7 +27,7 @@ class Application
     elsif req.path.match(/add/)
       search_term = req.params["item"]
       if @@cart.each do |item|
-        item == @@cart}
+        item == @@cart
         @@cart << item
       else
         resp.write "We don't have that item"
