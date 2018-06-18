@@ -29,7 +29,8 @@ class Application
     #  else
     #    resp.write "We don't have that item"
     #  end
-    end
+  else
+    #end
     resp.finish
   end
 
