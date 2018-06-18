@@ -23,7 +23,7 @@ class Application
           resp.write "#{item}\n"
         end
       end
-  end
+    end
     #elsif req.path.match(/add/)
     #  search_term = req.params["item"]
     #  if @@cart.@@items.detect {|item|
