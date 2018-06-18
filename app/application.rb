@@ -24,10 +24,10 @@ class Application
         @@cart.each do |item|
         resp.write "#{item}\n"
         end
-      elsif false
-      @@cart == []
-      resp.write "Your cart is empty"
-      end
+      elsif true
+        @@cart.each do |item|
+        resp.write "#{item}\n"
+        end
     end
   end
     #elsif req.path.match(/add/)
