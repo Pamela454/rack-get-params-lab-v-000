@@ -29,7 +29,7 @@ class Application
       if @@cart.each do |item|
         item == @@cart
         @@cart << item
-      end
+        end
       else
         resp.write "We don't have that item"
       end
