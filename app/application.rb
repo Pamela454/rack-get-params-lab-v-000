@@ -19,7 +19,7 @@ class Application
       if @@cart.empty?
         resp.write "Your cart is empty"
       else
-        @@cart.each do |item|
+        @@cart.map do |item|
           resp.write "#{item}\n"
         end
       end  #check to see if item is in array and add to cart if it is
