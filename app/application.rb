@@ -24,7 +24,6 @@ class Application
         end
     end
   end
-end
     #elsif req.path.match(/add/)
     #  search_term = req.params["item"]
     #  if @@cart.@@items.detect {|item|
