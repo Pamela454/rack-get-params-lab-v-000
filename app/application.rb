@@ -22,7 +22,7 @@ class Application
         @@cart.each do |item|
         resp.write "#{item}\n"
         end
-      elsif
+      elsif false
       @@cart == []
       resp.write "Your cart is empty"
       end
