@@ -25,7 +25,7 @@ class Application
       end  #check to see if item is in array and add to cart if it is
     elsif req.path.match(/add/)
       search_term = req.params["item"]
-      if @@cart.each do |item|
+      if @@items.include? search_term
         item == @@cart?
         @@cart << item
         end
